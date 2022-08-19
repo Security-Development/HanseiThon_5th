@@ -1,0 +1,103 @@
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.background {
+    height: 100%;
+    width: 100%;
+}
+
+
+.container {
+    height: 100%;
+    width: 120rem;
+    display: flex;
+}
+
+.container > .item:nth-child(1){
+    flex-grow: 0.38;
+}
+
+.container > .item:nth-child(2) {
+    flex-grow: 1;
+    padding: 7.5rem 2rem;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.sub-title {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.login-form {
+    margin-top: 3rem;
+}
+
+input {
+    border: none;
+    width: 90%;
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+    border-bottom:2px solid black;
+}
+
+.login-button {
+    display: flex;
+    justify-content: start;
+}
+
+.login-button > div:nth-child(1) {
+    margin-right: 4rem;
+}
+
+.login-button > div {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.login-id {
+    background-color: black;
+    border-radius: 3rem;
+    padding: 1.29rem 5.2rem;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.login-pw {
+    background-color: transparent;
+    border: black 7px solid;
+	box-sizing: border-box;
+    border-radius: 3rem;
+    padding: 1rem 3.7rem;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+}
+
+
+.etc-id{
+    border: none;
+    background-color :transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.etc-pw{
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.login-etc {
+    font-size: 1.5rem;
+    color: #787272;
+}

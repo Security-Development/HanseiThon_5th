@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="static/css/detail.css"/> 
+    </head>
+
+    <body>
+
+        <div class="index">
+            <div class="title-small">
+                PROGRAM GUIDE
+            </div>
+            <div class="title">
+                프로그램 가이드
+            </div>
+        </div>
+        {% if index == 1 %}
+
+        <div class="location">
+            <div class="left" onclick="location.href='/'">
+            </div>
+
+            <div class="indexs" style="background-image: url('/static/images/one.png');">
+
+                빈칸에 단어를 채우며 오감적인 
+                부분을 공부한다.
+            </div>
+
+            <div class="right" onclick="location.href='/detail?index=2'">
+            </div>
+        </div>
+            
+        {% elif index == 2%}
+            <div class="location">
+                <div class="left" onclick="location.href='/detail?index=1'">
+                </div>
+
+                <div class="indexs" style="background-image: url('/static/images/two.png');">
+
+                    5개의 키워드를 연결하며 하나의 스토리를 제작한다.
+                </div>
+
+                <div class="right" onclick="location.href='/detail?index=3'">
+                </div>
+            </div>
+        {% elif index == 3%}
+            <div class="location">
+                <div class="left" onclick="location.href='/detail?index=2'">
+                </div>
+
+                <div class="indexs" style="background-image: url('/static/images/three.png');">
+
+                    한줄의 주제를 주면 그 주제를 이어나가며 이야기를 작성한다.
+                </div>
+
+                <div class="right" onclick="location.href='/detail?index=4'">
+                </div>
+            </div>
+        {% elif index == 4%}
+            <div class="location">
+                <div class="left" onclick="location.href='/detail?index=3'">
+                </div>
+
+                <div class="indexs" style="background-image: url('/static/images/four.png');">
+                    두개의 주제가 주어지면 두개의 주제를 합쳐 하나의 아이디어로 만든다.
+                </div>
+
+                <div class="right" onclick="location.href='/detail?index=5'">
+                </div>
+            </div>
+        {% elif index == 5%}
+            <div class="location">
+                <div class="left" onclick="location.href='/detail?index=4'">
+                </div>
+
+                <div class="indexs" style="background-image: url('/static/images/five.png');">
+                    두 인물의 프로필을 보고 두 인물에게 일어날 이야기를 써보기
+                </div>
+
+                <div class="right" onclick="location.href='/'">
+                </div>
+            </div>
+        {% elif index > 5 or index < 1%}
+            
+            <script>
+                location.href="/";
+            </script>
+        {% endif %}
+        </div>
+
+        <div class="footer">
+            <div>
+                왼쪽 버튼 클릭시 이전 페이지로
+            </div>
+            <div>
+                - {{index}} -
+            </div>
+            <div>
+                오른쪽 버튼 클릭시 다음 페이지로
+            </div>
+            
+        </div>
+    </body>
+</html>

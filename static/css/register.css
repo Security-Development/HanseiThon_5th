@@ -1,0 +1,55 @@
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+    background-image: url("/static/images/register.png");
+    background-size: cover;
+    color: black;
+}
+
+.register {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 4rem;
+    width: 30rem;
+    border: black solid 2px;
+    border-radius: 39px;
+    height: 50rem;
+    background-color: white;
+    box-shadow: 26px 21px 4px rgba(0, 0, 0, 0.25);
+}
+
+.title {
+    margin-top: 1.5rem;
+    padding: 0 0.7rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.sub-title {
+    font-size: 1.5rem;
+}
+
+input {
+    width: 80%;
+    font-size: 1.4rem;
+    border: none;
+    background-color: transparent;
+    border-bottom: black solid 1px;
+}
+
+.input-list > div {
+    margin-top: 3rem;
+}
+
+.submit-button {
+    margin-top: 3rem;
+}
+
+.submit-button > button {
+    padding: 1rem 33%;
+    border: none;
+    font-weight: 700;
+    font-size: 2rem;
+    color: white;
+    background-color: #4F42DE;
+    cursor: pointer;
+}
